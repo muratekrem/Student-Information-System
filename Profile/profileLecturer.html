@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="profileLecturer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<title>Student Information System</title>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="menu-list">
+        <ul>
+            <li><a href="../Courses/courses.html">Courses</a></li>
+            <li><a href="../LecturerGrades/grades.html">Grades</a></li>
+        </ul>
+    </div>    
+    
+    <div class="title">
+        <h3><a href="../Homepage/homepage.html" style="text-decoration: none; color: white;">Student Information System</a></h3>
+    </div>
+    <a href="profileLecturer.html" style="text-decoration: none; color: white;"><i class='far fa-user-circle' style='font-size:36px ; margin-right: 10px;'></i></a>
+</div>
+<div class="profile-panel">
+    <div class="profile-info">
+        <div class="profile-item">
+            <span class="label">ID:</span>
+            <span class="value" id="lecturer-id"></span>
+        </div>
+        <div class="profile-item">
+            <span class="label">Name Surname:</span>
+            <span class="value" id="lecturer-name"></span>
+        </div>
+        <div class="profile-item">
+            <span class="label">Lectures:</span>
+            <span class="value">Lecture Count</span>
+        </div>
+        
+    </div>
+</div>
+
+<script src="profileLecturer.js"></script>
+
+</body>
+</html>

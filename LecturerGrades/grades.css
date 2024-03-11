@@ -1,0 +1,110 @@
+.top-bar {
+    background-color: #4c4c4c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.menu-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    z-index: 1000;
+}
+
+.menu-list.active {
+    display: block;
+}
+
+.menu-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    padding: 8px 12px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-list li a:hover {
+    background-color: #f0f0f0;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.grades-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.grades-table th, .grades-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.grades-table th {
+    background-color: #f2f2f2;
+}
+
+.grades-table td {
+    background-color: #fff;
+}
+
+.grades-table th, .grades-table td:first-child {
+    white-space: nowrap;
+}

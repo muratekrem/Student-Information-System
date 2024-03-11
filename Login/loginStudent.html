@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="loginStudent.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Student Information System</title>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="title">
+        <h3><a href="../Homepage/homepage.html" style="text-decoration: none; color: white;">Student Information System</a></h3>
+    </div>
+    <div class="buttons">
+        <button class="button"><a href="loginStudent.html" style="text-decoration: none; color: white;">Student Log in </a></button>
+        <button class="button"><a href="loginLecturer.html" style="text-decoration: none; color: white;">Lecturer Log in</a></button>
+    </div>
+</div>
+
+
+    <form action="/studentlogin" method="POST" class="login-panel">
+        <div class="input-group">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" onchange="handleChange(event)" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <div class="password-input">
+                <input type="password" id="password" name="password">
+                <span class="password-toggle" onclick="togglePasswordVisibility()"><i class="fas fa-eye"></i></span>
+            </div>
+        </div>
+        <button type="submit" class="login-button" >Login</button>
+    </form>
+
+    <script src="loginStudent.js"></script>
+    <script src="../Profile/profileStudent.js"></script>
+        <script>
+            function handleChange(event) {
+                var studentID = event.target.value;
+                localStorage.setItem("studentID", studentID);
+                console.log(studentID);
+            }
+        </script>
+    
+</body>
+</html>

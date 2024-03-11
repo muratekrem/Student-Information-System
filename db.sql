@@ -1,0 +1,1 @@
+SELECT * FROM student_information_system.student_information_system;

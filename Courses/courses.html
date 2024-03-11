@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="courses.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<title>Lecturer Dashboard - Student Information System</title>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="menu-list">
+        <ul>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="../LecturerGrades/grades.html">Grades</a></li>
+        </ul>
+    </div>    
+    
+    <div class="title">
+        <h3><a href="../Homepage/homepage.html" style="text-decoration: none; color: white;">Student Information System</a></h3>
+    </div>
+    <a href="../Profile/profileLecturer.html" style="text-decoration: none; color: white;"><i class='far fa-user-circle' style='font-size:36px ; margin-right: 10px;'></i></a>
+</div>
+
+<div class="add-lecture">
+    <input type="text" id="lecture-name" placeholder="Enter Lecture Name">
+    <button onclick="addLecture()">Add Lecture</button>
+</div>
+
+<div class="lecturer-container">
+</div>
+
+<div class="add-student-panel" id="add-student-panel" style="display: none;">
+    <h4>Add Student</h4>
+    <input type="text" id="student-id" placeholder="Student ID">
+    <input type="text" id="student-name" placeholder="Name Surname">
+    <button onclick="addStudent()">Add</button>
+</div>
+
+<div class="remove-student-panel" id="remove-student-panel" style="display: none;">
+    <h4>Remove Student</h4>
+    <select id="remove-student-select">
+    </select>
+    <button onclick="removeStudent()">Remove</button>
+</div>
+
+<script src="courses.js"></script>
+
+</body>
+</html>
